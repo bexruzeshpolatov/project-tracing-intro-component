@@ -1,0 +1,162 @@
+// scss start
+@import 'media';
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@500;700;900&family=Josefin+Sans:wght@300;400;600&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Barlow Condensed;
+    width: 100%;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 60%;
+    background-color: hsl(207, 33%, 95%);
+    z-index: -1;
+    border-radius: 0 0  48px 0;
+}
+.content{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 64px; 
+    
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+       width: 100%;
+        .media_logo{
+            display: none;
+        } 
+    }
+    .nav_items{
+        display: flex;
+        gap: 42px;
+        .item{ 
+            color: #242942;
+            text-align: right;
+            font-family: Barlow Condensed;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1px;
+            text-decoration-line: underline; 
+            text-decoration: none;
+        }
+        .login{
+            color: #575a6d;
+            text-align: right;
+            font-family: Barlow Condensed;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1px;
+            text-decoration-line: underline;
+            text-decoration: none;
+        }
+    }
+    .hamburger{
+        display: none;
+    }
+}
+.main-part{
+    display: flex;
+    justify-content: space-between;
+
+    .main-cart {
+        
+        margin-top: 175px;
+        h1{
+            
+            display: flex;
+            color: #242942;
+            font-family: Barlow Condensed;
+            font-size: 54px;
+            font-style: normal;
+        }
+        p{
+            color: #242942;
+            font-family: Barlow;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px; /* 144.444% */
+        }
+    }
+    .main-img{
+        margin-top: 130.25px;
+    }
+    .new{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .new-text{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 25px;
+            flex-shrink: 0;
+            border-radius: 12.5px;
+            background: #242942;
+            color: #ffffff;
+            text-align: right;
+            font-family: Barlow Condensed;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1px;
+        }
+    }   
+    .button{
+        margin-top: 64px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        p{
+            color: #242942;
+            font-family: Barlow Condensed;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 5px;
+        }
+    }
+    button{
+        padding-right: 32px;
+        color: #FFF;
+        text-align: right;
+        font-family: Barlow Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.067px;
+        width: 184px;
+        height: 48px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #FF5E5E;
+        border: 0;
+    }
+    .main-button :hover{
+        background-color: rgb(243, 110, 110);
+    }   
+}

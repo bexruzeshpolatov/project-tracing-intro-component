@@ -1,0 +1,77 @@
+// Madia page
+// tablet
+@media screen and (max-width:1123px) and (min-width:450px) {
+    nav .navbar {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    nav .navbar .logo .logo_img{
+        display: flex;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+    .navbar .item{
+        display: none;
+    }
+    .navbar .login{
+        display: none;
+    }
+    nav .navbar .hamburger{
+        display: flex;
+    }
+    main .main-part .main-img img{
+        max-width: 100%;
+        height:1022px;
+    }
+    main .main-part{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    main .main-part .main-cart h1{
+        display: flex;
+        color: #242942;
+        font-family: Barlow Condensed;
+        font-size: 54px;
+        font-style: normal;
+    }
+}
+// mobilne page
+@media screen and (max-width:452px){
+    nav .navbar {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    nav .navbar .logo .logo_img{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .navbar .item{
+        display: none;
+    }
+    .navbar .login{
+        display: none;
+    }
+    nav .navbar .hamburger{
+        display: flex;
+    }
+    main .main-part .main-img img{
+        max-width: 100%;
+        height:450px;
+    }
+    main .main-part{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    main .main-part .main-cart h1{
+        color: #242942;
+        font-family: Barlow Condensed;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 100% */
+    }
+}
+main .main-part .main-cart{
+    padding-left: 32px;
+}
